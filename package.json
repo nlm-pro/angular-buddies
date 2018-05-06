@@ -1,13 +1,15 @@
 {
   "name": "@mace/prettier-schematics",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
   },
-  "keywords": ["schematics"],
+  "keywords": [
+    "schematics"
+  ],
   "author": "Noël Macé <contact@noelmace.com>",
   "license": "MIT",
   "schematics": "./src/collection.json",
