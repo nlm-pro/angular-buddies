@@ -4,9 +4,12 @@
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js"
+    "test": "npm run build && jasmine **/*_spec.js",
+    "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
   },
-  "keywords": ["schematics"],
+  "keywords": [
+    "schematics"
+  ],
   "author": "Noël Macé <contact@noelmace.com>",
   "license": "MIT",
   "schematics": "./src/collection.json",
@@ -17,5 +20,8 @@
     "@types/node": "^8.0.31",
     "jasmine": "^2.8.0",
     "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.1"
   }
 }
