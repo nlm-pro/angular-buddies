@@ -2,10 +2,8 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-add": {
-      "description": "Update an application with Prettier defaults.",
-      "factory": "./ng-add/index#ngAdd",
-      "private": true,
-      "hidden": true
+      "description": "Add Prettier to the workspace.",
+      "factory": "./ng-add/index#ngAdd"
     }
   }
 }
