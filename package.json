@@ -7,9 +7,7 @@
     "test": "npm run build && jasmine **/*_spec.js",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
   },
-  "keywords": [
-    "schematics"
-  ],
+  "keywords": ["schematics"],
   "author": "Noël Macé <contact@noelmace.com>",
   "license": "MIT",
   "schematics": "./src/collection.json",
