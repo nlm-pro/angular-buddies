@@ -1,13 +1,15 @@
 {
   "name": "@mace/prettier-schematics",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Add Prettier to your Angular CLI projects.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
   },
-  "keywords": ["schematics"],
+  "keywords": [
+    "schematics"
+  ],
   "author": "Noël Macé <contact@noelmace.com>",
   "license": "MIT",
   "schematics": "./src/collection.json",
