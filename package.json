@@ -1,7 +1,7 @@
 {
   "name": "@mace/prettier-schematics",
   "version": "0.2.1",
-  "description": "A blank schematics",
+  "description": "Add Prettier to your Angular CLI projects.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js",
