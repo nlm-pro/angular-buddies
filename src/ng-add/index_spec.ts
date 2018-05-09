@@ -19,6 +19,12 @@ describe('ng-add', () => {
     expect(tree.files).toEqual(['/.prettierignore', '/.prettierrc']);
   });
 
+  it('have a prettier-config alias', () => {
+    const tree = runner.runSchematic('prettier-config', defaultOptions, inputTree);
+
+    expect(tree.files).toEqual(['/.prettierignore', '/.prettierrc']);
+  });
+
   describe('(on package.json)', () => {
     let testTree: UnitTestTree;
 
@@ -59,7 +65,7 @@ describe('ng-add', () => {
     it('add prettier dependency', () => {
       const packageJsonText = testTree.readContent('/package.json');
       const packageJson = JSON.parse(packageJsonText);
-      
+
       expect(packageJson.devDependencies.prettier).toBeTruthy();
     });
   });
