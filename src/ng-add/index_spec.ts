@@ -1,9 +1,13 @@
+import { Schema as AddOptions } from './schema.d';
 import { Tree } from '@angular-devkit/schematics';
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing';
 import * as path from 'path';
 
 const collectionPath = path.join(__dirname, '../collection.json');
-const defaultOptions: any = {};
+const defaultOptions: AddOptions = {
+  skipInstall: false,
+  skipScripts: false
+};
 let runner: SchematicTestRunner;
 let inputTree: Tree;
 
@@ -49,11 +53,11 @@ describe('ng-add', () => {
           }
         })
       );
-
-      testTree = runner.runSchematic('ng-add', defaultOptions, inputTree);
     });
 
     it('add prettify script', () => {
+      testTree = runner.runSchematic('ng-add', defaultOptions, inputTree);
+
       const packageJsonText = testTree.readContent('/package.json');
       const packageJson = JSON.parse(packageJsonText);
 
@@ -62,7 +66,19 @@ describe('ng-add', () => {
       );
     });
 
+    it('do not add prettify script when skipScript option is true', () => {
+      const options: AddOptions = { ...defaultOptions, skipScripts: true };
+      testTree = runner.runSchematic('ng-add', options, inputTree);
+
+      const packageJsonText = testTree.readContent('/package.json');
+      const packageJson = JSON.parse(packageJsonText);
+
+      expect(packageJson.scripts.prettify).toBeUndefined();
+    });
+
     it('add prettier dependency', () => {
+      testTree = runner.runSchematic('ng-add', defaultOptions, inputTree);
+
       const packageJsonText = testTree.readContent('/package.json');
       const packageJson = JSON.parse(packageJsonText);
 
