@@ -3,5 +3,5 @@
 !*.d.ts
 
 # development tools
-.prettier*
-tsconfig.json
+/.prettier*
+/tsconfig.json
