@@ -1,5 +1,11 @@
 <a name="0.2.1"></a>
 
+## [0.2.2](https://github.com/noelmace/prettier-schematics/compare/v0.2.1...v0.2.2) (2018-05-09)
+
+<a name="0.2.2"></a>
+
+_Release for npm package documentation only_
+
 ## [0.2.1](https://github.com/noelmace/prettier-schematics/compare/v0.1.0...v0.2.1) (2018-05-09)
 
 FYI : v0.2.0 had to be unpublish as publish went wrong creating a fatal issue.
