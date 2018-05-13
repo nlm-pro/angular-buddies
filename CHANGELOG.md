@@ -1,3 +1,13 @@
+<a name="0.2.3"></a>
+## [0.2.3](https://github.com/noelmace/prettier-schematics/compare/v0.2.2...v0.2.3) (2018-05-13)
+
+
+### Bug Fixes
+
+* ng-add options ([e56dc4e](https://github.com/noelmace/prettier-schematics/commit/e56dc4e))
+
+
+
 <a name="0.2.2"></a>
 
 ## [0.2.2](https://github.com/noelmace/prettier-schematics/compare/v0.2.1...v0.2.2) (2018-05-09)
