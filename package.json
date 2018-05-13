@@ -3,6 +3,8 @@
   "version": "0.2.2",
   "description": "Add Prettier to your Angular CLI projects.",
   "scripts": {
+    "preversion": "npm run test",
+    "version": "standard-changelog && git add CHANGELOG.md",
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}"
@@ -20,6 +22,7 @@
     "typescript": "^2.5.2"
   },
   "devDependencies": {
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "standard-changelog": "^1.0.19"
   }
 }
