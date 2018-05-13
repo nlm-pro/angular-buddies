@@ -8,6 +8,11 @@
       "type": "boolean",
       "description": "Skip prettier execution scripts install.",
       "default": false
+    },
+    "skipInstall": {
+      "type": "boolean",
+      "description": "Skip prettier depencies install.",
+      "default": false
     }
   },
   "required": []
