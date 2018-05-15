@@ -1,3 +1,29 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/noelmace/prettier-schematics/compare/v0.2.3...v0.3.0) (2018-05-15)
+
+
+### Bug Fixes
+
+* missing schema declarations ([a460e27](https://github.com/noelmace/prettier-schematics/commit/a460e27))
+
+
+### Code Refactoring
+
+* move config to another schematic ([4046bd5](https://github.com/noelmace/prettier-schematics/commit/4046bd5))
+
+
+### Features
+
+* permit to set custom value for Prettier options ([0f8e8d8](https://github.com/noelmace/prettier-schematics/commit/0f8e8d8))
+
+
+### BREAKING CHANGES
+
+* the `prettier-config` schematic now only generate
+config files. `ng-add` alias is now `prettier-init`.
+
+
+
 <a name="0.2.3"></a>
 ## [0.2.3](https://github.com/noelmace/prettier-schematics/compare/v0.2.2...v0.2.3) (2018-05-13)
 
