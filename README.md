@@ -68,9 +68,38 @@ _This is the schematic Angular CLI will run when using `ng add`._
   </p>
 </details>
 
+\+ all `prettier-config` options
+
 ### prettier-config
 
 Generate prettier config files.
+
+#### Options
+
+<details>
+  <summary>single-quote</summary>
+  <p>
+    <code>--single-quote boolean</code>
+  </p>
+  <p>
+    Set <a href="https://prettier.io/docs/en/options.html#quotes">single-quote</a> Prettier rule value.
+  </p>
+  <p>
+    Default: true
+  </p>
+</details>
+<details>
+  <summary>print-width</summary>
+  <p>
+    <code>--print-width number</code>
+  </p>
+  <p>
+    Set <a href="https://prettier.io/docs/en/options.html#print-width">print-width</a> Prettier rule value.
+  </p>
+  <p>
+    Default: 120
+  </p>
+</details>
 
 ## Scripts
 

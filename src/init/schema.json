@@ -13,6 +13,17 @@
       "type": "boolean",
       "description": "Skip prettier depencies install.",
       "default": false
+    },
+    // Config options
+    "singleQuote": {
+      "type": "boolean",
+      "description": "See https://prettier.io/docs/en/options.html#quotes",
+      "default": true
+    },
+    "printWidth": {
+      "type": "number",
+      "description": "See https://prettier.io/docs/en/options.html#print-width",
+      "default": "120"
     }
   },
   "required": []

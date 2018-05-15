@@ -3,6 +3,18 @@
   "id": "SchematicsPrettierConfig",
   "title": "Prettier Config Options Schema",
   "type": "object",
-  "properties": {},
+  // keep in sync with init/schema.json
+  "properties": {
+    "singleQuote": {
+      "type": "boolean",
+      "description": "See https://prettier.io/docs/en/options.html#quotes",
+      "default": true
+    },
+    "printWidth": {
+      "type": "number",
+      "description": "See https://prettier.io/docs/en/options.html#quotes",
+      "default": "120"
+    }
+  },
   "required": []
 }

@@ -1,1 +1,4 @@
-export interface Schema {}
+export interface Schema {
+  singleQuote: boolean;
+  printWidth: number;
+}
