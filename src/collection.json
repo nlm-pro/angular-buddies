@@ -2,9 +2,13 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-add": {
-      "description": "Add Prettier configuration and scripts to the workspace.",
-      "factory": "./ng-add/index#ngAdd",
-      "aliases": ["prettier-config"]
+      "description": "Add Prettier and all associated files and scripts to the workspace.",
+      "factory": "./init/index#init",
+      "aliases": ["prettier-init"]
+    },
+    "prettier-config": {
+      "description": "Add Prettier configuration files.",
+      "factory": "./config/index#config"
     }
   }
 }
