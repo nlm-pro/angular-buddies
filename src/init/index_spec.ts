@@ -5,6 +5,8 @@ import * as path from 'path';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 const defaultOptions: AddOptions = {
+  singleQuote: true,
+  printWidth: 120,
   skipInstall: false,
   skipScripts: false
 };
