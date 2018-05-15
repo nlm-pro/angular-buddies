@@ -1,18 +1,8 @@
-import {
-  Rule,
-  SchematicContext,
-  Tree,
-  apply,
-  chain,
-  url,
-  template,
-  mergeWith,
-  Source,
-  noop
-} from '@angular-devkit/schematics';
+import { Rule, SchematicContext, Tree, chain, noop } from '@angular-devkit/schematics';
 import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 import { addToPackageJson } from '../utility/package';
-import { Schema as AddOptions } from './schema';
+import { Schema as InitOptions } from './schema';
+import { config } from '../config';
 
 const prettierVersion = '1.12.1';
 
@@ -27,15 +17,6 @@ function addPrettierToPackageJson(): Rule {
     addToPackageJson(host, 'devDependencies', 'prettier', `^${prettierVersion}`);
     return host;
   };
-}
-
-function applyFiles(options: AddOptions): Source {
-  return apply(url('./files'), [
-    template({
-      // TODO
-      ...(options as object)
-    })
-  ]);
 }
 
 function addPrettierTask(): Rule {
@@ -55,9 +36,9 @@ function addPrettierTask(): Rule {
   };
 }
 
-export function ngAdd(options: AddOptions): Rule {
+export function init(options: InitOptions): Rule {
   return chain([
-    mergeWith(applyFiles(options)),
+    config(options),
     addPrettierToPackageJson(),
     options.skipInstall ? noop() : installNodeDeps(),
     options.skipScripts ? noop() : addPrettierTask()
