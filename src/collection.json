@@ -4,11 +4,13 @@
     "ng-add": {
       "description": "Add Prettier and all associated files and scripts to the workspace.",
       "factory": "./init/index#init",
+      "schema": "./init/schema.json",
       "aliases": ["prettier-init"]
     },
     "prettier-config": {
       "description": "Add Prettier configuration files.",
-      "factory": "./config/index#config"
+      "factory": "./config/index#config",
+      "schema": "./config/schema.json"
     }
   }
 }
