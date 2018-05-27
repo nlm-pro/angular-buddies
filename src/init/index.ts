@@ -3,8 +3,7 @@ import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 import { addToPackageJson } from '../utility/package';
 import { Schema as InitOptions } from './schema';
 import { config } from '../config';
-
-const prettierVersion = '1.12.1';
+import { dependencies } from '../utility/dependencies';
 
 function installNodeDeps(): Rule {
   return (_: Tree, context: SchematicContext) => {
@@ -14,7 +13,7 @@ function installNodeDeps(): Rule {
 
 function addPrettierToPackageJson(): Rule {
   return (host: Tree) => {
-    addToPackageJson(host, 'devDependencies', 'prettier', `^${prettierVersion}`);
+    addToPackageJson(host, 'devDependencies', 'prettier', `^${dependencies.prettier}`);
     return host;
   };
 }
