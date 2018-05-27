@@ -1,14 +1,13 @@
 # Stable Release requirements / TO-DO List
 
 * [x] support `ng add`
-* [ ] (optionnal) git commit hook
-* [ ] options
+* [x] git commit hook
+* [x] options
   * [x] init (--skipInstall typing and doc)
-  * [ ] ignore from .gitignore, .prettierignore or neither
-  * [ ] custom initial printWidth
-* [ ] use a 'prettify' schematic or build architect instead of the current npm script
+  * [x] custom initial printWidth
+* [ ] use a 'prettify' schematic, a build architect or extend ng lint, instead of the current npm script
 * [ ] handle tslint conflicts
-* [ ] intregration with ng lint ?
+* [ ] run prettier on files generated with other schematics
 
 ## Development environment
 
