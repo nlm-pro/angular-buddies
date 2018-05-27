@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsPrettierHook",
+  "title": "Prettier Hook Options Schema",
+  "type": "object",
+  "properties": {
+    "skipInstall": {
+      "type": "boolean",
+      "description": "Skip npm depencies install.",
+      "default": false
+    }
+  },
+  "required": []
+}

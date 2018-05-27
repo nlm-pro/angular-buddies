@@ -19,13 +19,13 @@ describe('config', () => {
   });
 
   it('add prettier config files', () => {
-    const tree = runner.runSchematic('ng-add', defaultOptions, Tree.empty());
+    const tree = runner.runSchematic('prettier-config', defaultOptions, Tree.empty());
 
     expect(tree.files).toEqual(['/.prettierignore', '/.prettierrc']);
   });
 
   it('should set Prettier options values', () => {
-    const tree = runner.runSchematic('ng-add', defaultOptions, Tree.empty());
+    const tree = runner.runSchematic('prettier-config', defaultOptions, Tree.empty());
     const prettierRc = getFileContent(tree, '/.prettierrc');
 
     expect(prettierRc).toContain(`"printWidth": ${defaultOptions.printWidth}`);
