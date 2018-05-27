@@ -1,6 +1,6 @@
 {
   "name": "@mace/prettier-schematics",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Add Prettier to your Angular CLI projects.",
   "scripts": {
     "preversion": "npm run test",

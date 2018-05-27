@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/noelmace/prettier-schematics/compare/v0.3.0...v0.4.0) (2018-05-27)
+
+
+### Features
+
+* add new "prettier-hook" schematic ([31873a0](https://github.com/noelmace/prettier-schematics/commit/31873a0))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/noelmace/prettier-schematics/compare/v0.2.3...v0.3.0) (2018-05-15)
 
