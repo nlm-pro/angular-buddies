@@ -2,6 +2,10 @@
 
 > [@angular/devkit](http://github.com/angular/devkit) Schematics for [Prettier](http://github.com/prettier/prettier).
 
+## Motivation
+
+Based on [the comment](https://github.com/angular/angular-cli/issues/7379#issuecomment-324615905) added to an associated issue in angular-cli.
+
 ## Installation
 
 ### With Angular CLI v6+
@@ -34,8 +38,8 @@ In order to run one of the following schematics, you could either use :
   * `npm i -g @angular-devkit/schematics-cli`
   * or `yarn global add @angular-devkit/schematics-cli`
 
-For more informations about Schematics, go to [Schematics — An Introduction
-](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2).
+For more informations about Schematics, go to
+[Schematics — An Introduction](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2).
 
 ### prettier-init
 
@@ -67,8 +71,20 @@ _This is the schematic Angular CLI will run when using `ng add`._
     Do not generate the scripts helping to run prettier on your workspace
   </p>
 </details>
+<details>
+  <summary>hook</summary>
+  <p>
+    <code>--hook</code>
+  </p>
+  <p>
+    Also run the prettier-hook schematic in order to add the associated pre-commit hook.
+  </p>
+  <p>
+    Default: true
+  </p>
+</details>
 
-\+ all `prettier-config` options
+\+ all `prettier-config` and `prettier-hook` options
 
 ### prettier-config
 
@@ -98,6 +114,22 @@ Generate prettier config files.
   </p>
   <p>
     Default: 120
+  </p>
+</details>
+
+### prettier-hook
+
+Generate a git pre-commit hook (thanks to husky and lint-staged) which auto-format your staged files with prettier before any commit.
+
+#### Options
+
+<details>
+  <summary>skip-install</summary>
+  <p>
+    <code>--skip-install</code>
+  </p>
+  <p>
+    Do not run npm / yarn install after adding the required dependencies.
   </p>
 </details>
 
