@@ -1,14 +1,17 @@
+import { dependencies } from './../utility/dependencies';
 import { Schema as AddOptions } from './schema.d';
 import { Tree } from '@angular-devkit/schematics';
 import { SchematicTestRunner, UnitTestTree } from '@angular-devkit/schematics/testing';
 import * as path from 'path';
+import * as fs from 'fs';
 
 const collectionPath = path.join(__dirname, '../collection.json');
 const defaultOptions: AddOptions = {
   singleQuote: true,
   printWidth: 120,
   skipInstall: false,
-  skipScripts: false
+  skipScripts: false,
+  hook: true
 };
 let runner: SchematicTestRunner;
 let inputTree: Tree;
@@ -22,13 +25,13 @@ describe('ng-add', () => {
   it('add prettier config files', () => {
     const tree = runner.runSchematic('ng-add', defaultOptions, inputTree);
 
-    expect(tree.files).toEqual(['/.prettierignore', '/.prettierrc']);
+    expect(tree.files).toEqual(jasmine.arrayContaining(['/.prettierignore', '/.prettierrc']));
   });
 
   it('have a prettier-config alias', () => {
     const tree = runner.runSchematic('prettier-config', defaultOptions, inputTree);
 
-    expect(tree.files).toEqual(['/.prettierignore', '/.prettierrc']);
+    expect(tree.files).toEqual(jasmine.arrayContaining(['/.prettierignore', '/.prettierrc']));
   });
 
   describe('(on package.json)', () => {
@@ -37,24 +40,17 @@ describe('ng-add', () => {
     beforeEach(() => {
       inputTree.create(
         '/package.json',
-        JSON.stringify({
-          name: 'test',
-          version: '0.0.0',
-          license: 'MIT',
-          scripts: {
-            ng: 'ng',
-            start: 'ng serve',
-            build: 'ng build',
-            test: 'ng test',
-            lint: 'ng lint',
-            e2e: 'ng e2e'
-          },
-          private: true,
-          dependencies: {
-            '@angular/common': '5.2.10'
-          }
-        })
+        fs.readFileSync(path.join(__dirname, '../test/package.json'), 'utf8')
       );
+    });
+
+    it('add hook', () => {
+      const tree = runner.runSchematic('ng-add', defaultOptions, inputTree);
+
+      const packageJsonText = tree.readContent('/package.json');
+      const packageJson = JSON.parse(packageJsonText);
+
+      expect(packageJson.scripts['precommit']).toEqual('lint-staged');
     });
 
     it('add prettify script', () => {
@@ -84,7 +80,7 @@ describe('ng-add', () => {
       const packageJsonText = testTree.readContent('/package.json');
       const packageJson = JSON.parse(packageJsonText);
 
-      expect(packageJson.devDependencies.prettier).toBeTruthy();
+      expect(packageJson.devDependencies.prettier).toContain(dependencies.prettier);
     });
   });
 });

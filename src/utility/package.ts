@@ -1,4 +1,6 @@
 import { Tree } from '@angular-devkit/schematics/src/tree/interface';
+import { SchematicContext, Rule } from '@angular-devkit/schematics';
+import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
 
 export function addToPackageJson(
   host: Tree,
@@ -22,4 +24,10 @@ export function addToPackageJson(
   }
 
   return host;
+}
+
+export function installNodeDeps(): Rule {
+  return (_: Tree, context: SchematicContext) => {
+    context.addTask(new NodePackageInstallTask());
+  };
 }

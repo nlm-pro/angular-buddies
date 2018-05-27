@@ -1,15 +1,9 @@
-import { Rule, SchematicContext, Tree, chain, noop } from '@angular-devkit/schematics';
-import { NodePackageInstallTask } from '@angular-devkit/schematics/tasks';
-import { addToPackageJson } from '../utility/package';
+import { Rule, Tree, chain, noop } from '@angular-devkit/schematics';
+import { addToPackageJson, installNodeDeps } from '../utility/package';
 import { Schema as InitOptions } from './schema';
 import { config } from '../config';
 import { dependencies } from '../utility/dependencies';
-
-function installNodeDeps(): Rule {
-  return (_: Tree, context: SchematicContext) => {
-    context.addTask(new NodePackageInstallTask());
-  };
-}
+import { hook } from '../hook';
 
 function addPrettierToPackageJson(): Rule {
   return (host: Tree) => {
@@ -39,7 +33,8 @@ export function init(options: InitOptions): Rule {
   return chain([
     config(options),
     addPrettierToPackageJson(),
-    options.skipInstall ? noop() : installNodeDeps(),
+    hook(options),
+    options.hook || options.skipInstall ? noop() : installNodeDeps(),
     options.skipScripts ? noop() : addPrettierTask()
   ]);
 }

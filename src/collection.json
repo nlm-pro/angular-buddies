@@ -11,6 +11,11 @@
       "description": "Add Prettier configuration files.",
       "factory": "./config/index#config",
       "schema": "./config/schema.json"
+    },
+    "prettier-hook": {
+      "description": "Add a prettier pre-commit hook.",
+      "factory": "./hook/index#hook",
+      "schema": "./hook/schema.json"
     }
   }
 }
