@@ -28,7 +28,7 @@
     "printWidth": {
       "type": "number",
       "description": "See https://prettier.io/docs/en/options.html#print-width",
-      "default": "120"
+      "default": 120
     }
   },
   "required": []
