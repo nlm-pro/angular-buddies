@@ -1,3 +1,16 @@
+<a name="0.5.0"></a>
+
+# [0.5.0](https://github.com/noelmace/prettier-schematics/compare/v0.4.1...v0.5.0) (2018-10-26)
+
+### Bug Fixes
+
+* line lenght prompt message ([372300c](https://github.com/noelmace/prettier-schematics/commit/372300c))
+* npm dependencies ([8babf08](https://github.com/noelmace/prettier-schematics/commit/8babf08))
+
+### Features
+
+* add prompts ([bb57e79](https://github.com/noelmace/prettier-schematics/commit/bb57e79))
+
 <a name="0.4.1"></a>
 
 ## [0.4.1](https://github.com/noelmace/prettier-schematics/compare/v0.4.0...v0.4.1) (2018-06-14)
