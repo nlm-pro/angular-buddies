@@ -19,7 +19,7 @@
     "skipInstall": {
       "type": "boolean",
       "description": "Skip npm depencies install.",
-      "default": false,
+      "default": false
     },
     // config - keep in sync with ../config/schema.json
     "singleQuote": {
