@@ -9,26 +9,30 @@
       "description": "Skip prettier execution scripts install.",
       "default": false
     },
-    "skipInstall": {
-      "type": "boolean",
-      "description": "Skip prettier depencies install.",
-      "default": false
-    },
     "hook": {
       "type": "boolean",
       "description": "Add precommit hook.",
-      "default": true
+      "default": true,
+      "x-prompt": "Automatically run prettier on staged files when commiting?"
     },
-    // Config options
+    // hook - keep in synw with ../hook/schema.json
+    "skipInstall": {
+      "type": "boolean",
+      "description": "Skip npm depencies install.",
+      "default": false,
+    },
+    // config - keep in sync with ../config/schema.json
     "singleQuote": {
       "type": "boolean",
       "description": "See https://prettier.io/docs/en/options.html#quotes",
-      "default": true
+      "default": true,
+      "x-prompt": "Use single quotes instead of double quotes?"
     },
     "printWidth": {
       "type": "number",
-      "description": "See https://prettier.io/docs/en/options.html#print-width",
-      "default": 120
+      "description": "See https://prettier.io/docs/en/options.html#quotes",
+      "default": 120,
+      "x-prompt": "What line length do you want to configure? (default 120)"
     }
   },
   "required": []
