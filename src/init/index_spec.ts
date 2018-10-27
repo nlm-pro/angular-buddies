@@ -6,20 +6,27 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 const collectionPath = path.join(__dirname, '../collection.json');
+
+let runner: SchematicTestRunner;
+let inputTree: Tree;
+
 const defaultOptions: AddOptions = {
   singleQuote: true,
   printWidth: 120,
   skipInstall: false,
   skipScripts: false,
-  hook: true
+  hook: true,
+  defaultCollection: true
 };
-let runner: SchematicTestRunner;
-let inputTree: Tree;
 
 describe('ng-add', () => {
   beforeEach(() => {
     runner = new SchematicTestRunner('@mace/prettier-schematics', collectionPath);
     inputTree = Tree.empty();
+    inputTree.create(
+      '/angular.json',
+      fs.readFileSync(path.join(__dirname, '../test/angular.json'), 'utf8')
+    );
   });
 
   it('add prettier config files', () => {
@@ -32,6 +39,22 @@ describe('ng-add', () => {
     const tree = runner.runSchematic('prettier-config', defaultOptions, inputTree);
 
     expect(tree.files).toEqual(jasmine.arrayContaining(['/.prettierignore', '/.prettierrc']));
+  });
+
+  it('set default collection', () => {
+    const inputTree = Tree.empty();
+    expect(() => {
+      runner.runSchematic('ng-add', { ...defaultOptions, defaultCollection: false }, inputTree);
+    }).not.toThrow();
+  });
+
+  it('defaultCollection=false permit to run without any angular.json', () => {
+    const tree = runner.runSchematic('ng-add', defaultOptions, inputTree);
+
+    const confText = tree.readContent('/angular.json');
+    const config = JSON.parse(confText);
+
+    expect(config.cli.defaultCollection).toBe('@mace/prettier-schematics');
   });
 
   describe('(on package.json)', () => {

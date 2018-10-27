@@ -15,6 +15,13 @@
       "default": true,
       "x-prompt": "Automatically run prettier on staged files when commiting?"
     },
+    "defaultCollection": {
+      "type": "boolean",
+      "description": "Set this package as the default collection for this workspace.",
+      "default": true,
+      "x-prompt":
+        "Set this project default collection to prettier-schematics? (Permits to automatically format every element you'll create using ng generate)"
+    },
     // hook - keep in synw with ../hook/schema.json
     "skipInstall": {
       "type": "boolean",
