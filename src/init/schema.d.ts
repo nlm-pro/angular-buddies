@@ -5,4 +5,5 @@ export interface Schema extends ConfigOptions, HookOptions {
   skipScripts: boolean;
   skipInstall: boolean;
   hook: boolean;
+  defaultCollection: boolean;
 }
