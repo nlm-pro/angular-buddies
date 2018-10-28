@@ -6,11 +6,11 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 
 ## Your buddies
 
-:cat: [Petter (short for @angular-buddies/prettier)](./packages/prettier/README.md) knows how to make your code pretty using Prettier.
+:cat: Petter (short for [@angular-buddies/prettier](./packages/prettier/README.md)) knows how to make your code pretty using Prettier.
 
 ## Principles
 
-Good buddies have principles. This Angular Buddies too, and in order to do so, they all are:
+Good buddies have principles, and these Angular Buddies are no exception. To do so, they all are:
 
 ### Considerate
 
@@ -28,11 +28,11 @@ Sometimes, JS dev is hard. Sometimes, you don't know if what you do is right and
 
 ### Independent
 
-`Good buddies come alone if you ask them.`
+`Good buddies do not impose their own buddies.`
 
 When you invite a buddy home, you don't need to have other people you don't know staying on your coach all night.
 
-Angular Buddies thinks the same! They all can help you on their own.
+Angular Buddies think the same! They all can help you on their own.
 
 > You can use every package alone. This packages will never impose you to use another of ours if you don't want to.
 
