@@ -1,6 +1,6 @@
 {
   "name": "@angular-buddies/prettier",
-  "version": "0.5.0",
+  "version": "1.0.0-alpha.0",
   "description": "Your buddy who knows how to make your code pretty using Prettier.",
   "keywords": ["schematics", "angular", "javascript", "web", "prettier", "formatter"],
   "author": "Noel M",
