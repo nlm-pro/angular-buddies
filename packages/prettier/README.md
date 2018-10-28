@@ -1,8 +1,10 @@
 # `@angular-buddies/prettier`
 
-Your buddy who knows how to make your code pretty using Prettier.
+**Your buddy who knows how to make your code pretty using Prettier.**
 
-> A tool from the [Angular Buddies](https://github.com/angular-buddies/angular-buddies) project.
+Easily add, configure, and use Prettier in your project. Extends the functionalities of Angular CLI, but also works without it, even for non-angular projects.
+
+> A tool from the [Angular Buddies][root] project.
 
 ![Buddy cleaning a window](https://user-images.githubusercontent.com/7578400/47610736-1ab9d480-da5d-11e8-8c3b-704deab17d45.gif)
 
@@ -64,7 +66,4 @@ Command : `npm run prettify`
 
 Originally, the first idea of this project was ased on [the comment](https://github.com/angular/angular-cli/issues/7379#issuecomment-324615905) added to an associated issue in angular-cli.
 
-## Misc
-
-b
-See my current [TO-DO List](TODO.md) for more informations on upcoming features.
+[root]: https://github.com/angular-buddies/angular-buddies
