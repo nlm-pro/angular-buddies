@@ -4,9 +4,6 @@ import { Schema as InitOptions } from './schema';
 import { config } from '../config';
 import { dependencies } from '../utility/dependencies';
 import { hook } from '../hook';
-import { updateWorkspace } from '../utility/angular-config';
-
-const defaultCollectionOverride = { cli: { defaultCollection: '@angular-buddies/prettier' } };
 
 function addPrettierToPackageJson(): Rule {
   return (host: Tree) => {
@@ -38,7 +35,6 @@ export function init(options: InitOptions): Rule {
     addPrettierToPackageJson(),
     hook(options),
     options.hook || options.skipInstall ? noop() : installNodeDeps(),
-    options.skipScripts ? noop() : addPrettierTask(),
-    options.defaultCollection ? updateWorkspace(defaultCollectionOverride) : noop()
+    options.skipScripts ? noop() : addPrettierTask()
   ]);
 }
