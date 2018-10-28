@@ -3,3 +3,4 @@ src/**/*.js
 src/**/*.js.map
 src/**/*.d.ts
 !src/**/schema.d.ts
+description.json
