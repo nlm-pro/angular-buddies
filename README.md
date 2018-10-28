@@ -6,7 +6,9 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 
 ## Your buddies
 
-:cat: Petter (short for [@angular-buddies/prettier][prettier-buddy] knows how to make your code pretty using Prettier.
+:cat: _Petter_ (short for [@angular-buddies/prettier][prettier-buddy]) knows how to make your code pretty using Prettier.
+
+:panda*face: \_Notelmo* (aka [@angular-buddies/build-notes][build-notes]) notes for you all the informations you may need about your project.
 
 ## Motivation
 
@@ -27,3 +29,4 @@ We would like to thanks all this projects' contributors for their amazing work. 
 [contributing]: https://github.com/angular-buddies/angular-buddies/blob/master/CONTRIBUTING.md
 [guidelines]: https://github.com/angular-buddies/angular-buddies/blob/master/docs/GUIDELINES.md
 [prettier-buddy]: https://github.com/angular-buddies/angular-buddies/blob/master/packages/prettier/README.md
+[build-notes]: https://github.com/angular-buddies/angular-buddies/blob/master/packages/build-notes/README.md

@@ -1,0 +1,20 @@
+{
+  "name": "build-notes",
+  "version": "1.0.0-alpha.0",
+  "description":
+    "Your buddy who notes for you all the informations you may need about your project.",
+  "keywords": ["angular", "architect", "builder", "webpack", "report"],
+  "author": "Noel M",
+  "homepage": "https://github.com/angular-buddies/angular-buddies#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-buddies/angular-buddies.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-buddies/angular-buddies/issues"
+  }
+}
