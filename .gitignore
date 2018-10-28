@@ -1,7 +1,8 @@
 # IDEs
 .idea/
 jsconfig.json
-.vscode/
+.vscode/*
+!.vscode/settings.json
 
 # Misc
 node_modules/

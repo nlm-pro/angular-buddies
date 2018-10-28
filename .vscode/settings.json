@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/packages/**/[^s][^c][^h]*.d.ts": true,
+    "**/packages/**/*.js": true,
+    "**/packages/**/*.js.map": true
+  },
+  "search.exclude": {
+    "**/packages/**/*.js": true,
+    "**/packages/**/*.js.map": true,
+    "**/packages/**/[^s][^c][^h]*.d.ts": true
+  }
+}
