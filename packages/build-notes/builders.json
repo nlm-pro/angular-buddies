@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "npm": {
+      "class": "./src/npm",
+      "schema": "./src/npm/schema.json",
+      "description": "Npm Builder"
+    }
+  }
+}
