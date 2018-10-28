@@ -1,24 +1,21 @@
 {
-  "name": "@mace/prettier-schematics",
-  "version": "0.5.0",
+  "name": "@angular-buddies/repo",
+  "version": "0.0.0",
   "description": "Add Prettier to your Angular CLI projects.",
   "scripts": {
-    "preversion": "npm run test",
+    "lerna": "lerna",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "preversion": "lerna run test",
     "version": "standard-changelog && git add CHANGELOG.md",
-    "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "clean": "git clean -f",
+    "postinstall": "lerna bootstrap"
   },
-  "keywords": ["schematics"],
+  "private": true,
   "author": "Noël M",
   "license": "MIT",
-  "schematics": "./src/collection.json",
-  "dependencies": {
-    "@angular-devkit/core": "^7.0.0",
-    "@angular-devkit/schematics": "^7.0.0",
-    "deepmerge": "^2.2.1"
-  },
   "devDependencies": {
     "@schematics/angular": "^7.0.3",
     "@types/jasmine": "^2.6.0",

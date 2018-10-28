@@ -1,148 +1,54 @@
-# Prettier-schematics
+# :a:ngular Buddies
 
-> [@angular/devkit](http://github.com/angular/devkit) Schematics for [Prettier](http://github.com/prettier/prettier).
+Enhance your JavaScript Dev Experience with friendly tools made by the Angular Community.
 
-## Motivation
+![Buddies chest bumping](https://user-images.githubusercontent.com/7578400/47610724-bf87e200-da5c-11e8-8c24-91ece38a28df.gif)
 
-Based on [the comment](https://github.com/angular/angular-cli/issues/7379#issuecomment-324615905) added to an associated issue in angular-cli.
+## Your buddies
 
-## Installation
+:cat: [Petter (short for @angular-buddies/prettier)](./packages/prettier/README.md) knows how to make your code pretty using Prettier.
 
-### With Angular CLI v6+
+## Principles
 
-The main goal of this package is to permit to add Prettier dependencies, scripts and default configuration to your Angular CLI workspace in just one command :
+Good buddies have principles. This Angular Buddies too, and in order to do so, they all are:
 
-`ng add @mace/prettier-schematics`
+### Considerate
 
-### Without Angular CLI v6+
+`Good buddies think about your own good before their own.`
 
-You can also install prettier-schematics with npm or yarn, using :
+Sometimes, JS dev is hard. Sometimes, you don't know if what you do is right and hope for advise. Angular Buddies are here to help you with that. By trying to distill some of the hive mind of the Angular Community into tooling, we hope we could help writing good JS code with ease, even for beginners.
 
-* `npm i [-g] @mace/prettier-schematics`
-* or `yarn [global] add @mace/prettier-schematics`
+> Our first goal is to enhance your developer experience. We place ease of use above anything else, and try to propose you the best solutions in order to facilitate javascript development.
 
-## Schematics
+### Open Minded
 
-In order to run one of the following schematics, you could either use :
+`Good buddies do not impose their predilections, and respect your preferences.`
 
-* Angular CLI
+> Even if this tools are mainly create by and for the Angular Community, a good part knows how to help you with any other JS dev solution, such as React, Vue.js, Node, etc...
 
-  `ng generate <schematic> --collection=@mace/prettier-schematics`
+### Independent
 
-* or the Schematics CLI
+`Good buddies come alone if you ask them.`
 
-  `schematics @mace/prettier-schematics:<schematic>`
+When you invite a buddy home, you don't need to have other people you don't know staying on your coach all night.
 
-  To do so, you'll have to install it globally, along with prettier-schematics :
+Angular Buddies thinks the same! They all can help you on their own.
 
-  * `npm i -g @angular-devkit/schematics-cli`
-  * or `yarn global add @angular-devkit/schematics-cli`
+> You can use every package alone. This packages will never impose you to use another of ours if you don't want to.
 
-For more informations about Schematics, go to
-[Schematics — An Introduction](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2).
+### Team Players
 
-### prettier-init
+`Good buddies know how to get along with your other buddies.`
 
-Initialize your project to allow the use of prettier.
+You don't want to lost other buddies when you find new ones. Even better, you hope that they get along nicely.
 
-> Alias : `ng-add`
+Angular Buddies agree! They all play nice with one another and your old buddies.
 
-> The following schematics are also run when using this one : `prettier-config`
+> This packages propose progressive enhancement in order to enhance your experience if you use them with other ones.
 
-_This is the schematic Angular CLI will run when using `ng add`._
+## Foreign buddies
 
-#### Options
+We would like to thanks all this projects' contributors for their amazing work. They all are true Open Source buddies, and whithout them, this project would not exist:
 
-<details>
-  <summary>skip-install</summary>
-  <p>
-    <code>--skip-install</code>
-  </p>
-  <p>
-    Do not run npm / yarn install after adding the required dependencies.
-  </p>
-</details>
-<details>
-  <summary>skip-scripts</summary>
-  <p>
-    <code>--skip-scripts</code>
-  </p>
-  <p>
-    Do not generate the scripts helping to run prettier on your workspace
-  </p>
-</details>
-<details>
-  <summary>hook</summary>
-  <p>
-    <code>--hook</code>
-  </p>
-  <p>
-    Also run the prettier-hook schematic in order to add the associated pre-commit hook.
-  </p>
-  <p>
-    Default: true
-  </p>
-</details>
-
-\+ all `prettier-config` and `prettier-hook` options
-
-### prettier-config
-
-Generate prettier config files.
-
-#### Options
-
-<details>
-  <summary>single-quote</summary>
-  <p>
-    <code>--single-quote boolean</code>
-  </p>
-  <p>
-    Set <a href="https://prettier.io/docs/en/options.html#quotes">single-quote</a> Prettier rule value.
-  </p>
-  <p>
-    Default: true
-  </p>
-</details>
-<details>
-  <summary>print-width</summary>
-  <p>
-    <code>--print-width number</code>
-  </p>
-  <p>
-    Set <a href="https://prettier.io/docs/en/options.html#print-width">print-width</a> Prettier rule value.
-  </p>
-  <p>
-    Default: 120
-  </p>
-</details>
-
-### prettier-hook
-
-Generate a git pre-commit hook (thanks to husky and lint-staged) which auto-format your staged files with prettier before any commit.
-
-#### Options
-
-<details>
-  <summary>skip-install</summary>
-  <p>
-    <code>--skip-install</code>
-  </p>
-  <p>
-    Do not run npm / yarn install after adding the required dependencies.
-  </p>
-</details>
-
-## Scripts
-
-Scripts are generated by the `prettier-init` schematic. You'll need to run it before using this scripts.
-
-### Prettify
-
-Run prettier on all your workspace files.
-
-Command : `npm run prettify`
-
-## Misc
-
-See my current [TO-DO List](TODO.md) for more informations on upcoming features.
+* [Angular CLI / Devkit](https://github.com/angular/angular-cli), development tools and libraries specialized for Angular.
+* [Prettier](https://github.com/prettier/prettier), opinionated code formatter.
