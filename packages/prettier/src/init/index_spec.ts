@@ -21,7 +21,7 @@ const defaultOptions: AddOptions = {
 
 describe('ng-add', () => {
   beforeEach(() => {
-    runner = new SchematicTestRunner('@mace/prettier-schematics', collectionPath);
+    runner = new SchematicTestRunner('@angular-buddies/prettier', collectionPath);
     inputTree = Tree.empty();
     inputTree.create(
       '/angular.json',
@@ -54,7 +54,7 @@ describe('ng-add', () => {
     const confText = tree.readContent('/angular.json');
     const config = JSON.parse(confText);
 
-    expect(config.cli.defaultCollection).toBe('@mace/prettier-schematics');
+    expect(config.cli.defaultCollection).toBe('@angular-buddies/prettier');
   });
 
   describe('(on package.json)', () => {

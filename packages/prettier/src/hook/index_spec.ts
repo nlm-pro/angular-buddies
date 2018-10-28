@@ -15,7 +15,7 @@ let inputTree: Tree;
 
 describe('hook', () => {
   beforeEach(() => {
-    runner = new SchematicTestRunner('@mace/prettier-schematics', collectionPath);
+    runner = new SchematicTestRunner('@angular-buddies/prettier', collectionPath);
     inputTree = Tree.empty();
   });
 

@@ -6,7 +6,7 @@ import { dependencies } from '../utility/dependencies';
 import { hook } from '../hook';
 import { updateWorkspace } from '../utility/angular-config';
 
-const defaultCollectionOverride = { cli: { defaultCollection: '@mace/prettier-schematics' } };
+const defaultCollectionOverride = { cli: { defaultCollection: '@angular-buddies/prettier' } };
 
 function addPrettierToPackageJson(): Rule {
   return (host: Tree) => {
