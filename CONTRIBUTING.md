@@ -1,16 +1,27 @@
 ## Testing
 
-To test locally, install `@angular-devkit/schematics` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+### Running tests locally
 
-Check the documentation with
+To run tests, use:
 
-```bash
-schematics --help
+```shell
+$ npm run test
 ```
 
-## Unit Testing
+When executed from this repository's root folder, this command will run all packages' tests.
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+> It is automatically run before any git push. Don't use `--no-verify`!
+
+From a `packages/foo` folder, it will only run the "foo" package's tests.
+
+### Schematics
+
+In order to test the schematics in dry-run, you can simply go the the associated package folder, and run the npm script `schematics` as follow:
+
+```schell
+cd packages/<schematics package>
+npm run schematics -- .:<schematic name>
+```
 
 ## Lint
 
