@@ -4,6 +4,8 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 
 ![Buddies chest bumping](https://user-images.githubusercontent.com/7578400/47610724-bf87e200-da5c-11e8-8c24-91ece38a28df.gif)
 
+[![GitHub license](https://img.shields.io/github/license/angular-buddies/angular-buddies.svg)](https://github.com/angular-buddies/angular-buddies) [![GitHub issues](https://img.shields.io/github/issues/angular-buddies/angular-buddies.svg)](https://github.com/angular-buddies/angular-buddies/issues) [![latest](https://img.shields.io/npm/v/%40angular-buddies%2Fprettier.svg)](https://npmjs.com/package/@angular-buddies/prettier)
+
 ## Your buddies
 
 :cat: [@angular-buddies/prettier][prettier-buddy] knows how to make your code pretty using Prettier.
