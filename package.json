@@ -11,7 +11,8 @@
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}",
     "precommit": "lint-staged",
     "clean": "git clean -f",
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "bump": "lerna version premajor --conventional-commits --no-push"
   },
   "private": true,
   "author": "Noël M",
