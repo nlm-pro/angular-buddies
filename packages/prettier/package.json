@@ -18,7 +18,8 @@
   "scripts": {
     "schematics": "schematics",
     "build": "tsc -p ./tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js"
+    "test": "npm run build && jasmine **/*_spec.js",
+    "prepublish": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/noelmace/prettier-schematics/issues"

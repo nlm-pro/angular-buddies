@@ -10,9 +10,7 @@
     "preversion": "lerna run test",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}",
     "clean": "git clean -f",
-    "postinstall": "lerna bootstrap",
-    "prepublish": "lerna run build",
-    "bump": "lerna version premajor --conventional-commits --no-push"
+    "postinstall": "lerna bootstrap"
   },
   "private": true,
   "author": "Noël M",

@@ -17,7 +17,8 @@
     "test": "echo \"Warning: 0 tests\"",
     "architect": "architect",
     "build": "tsc",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "prepublish": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/angular-buddies/angular-buddies/issues"
