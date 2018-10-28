@@ -8,7 +8,8 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 
 :cat: _Petter_ (short for [@angular-buddies/prettier][prettier-buddy]) knows how to make your code pretty using Prettier.
 
-:panda*face: \_Notelmo* (aka [@angular-buddies/build-notes][build-notes]) notes for you all the informations you may need about your project.
+<!-- prettier-ignore -->
+:panda_face: _Notelmo_ (aka [@angular-buddies/build-notes][build-notes]) notes for you all the informations you may need about your project.
 
 ## Motivation
 
