@@ -8,10 +8,18 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 
 ## Your buddies
 
-:cat: [@angular-buddies/prettier][prettier-buddy] knows how to make your code pretty using Prettier.
+<!-- prettier-ignore-start -->
 
-<!-- prettier-ignore -->
-:panda_face: [@angular-buddies/build-notes][build-notes] notes for you all the informations you may need about your project.
+|                 | Package                                     | Description |
+| --------------  | ------------------------------------------- | ----------- |
+| :cat:        | [@angular-buddies/prettier][prettier-buddy] | Knows how to make your code pretty using Prettier. |
+| :panda_face: | [@angular-buddies/build-notes][build-notes] | Notes for you all the informations you may need about your project. |
+|                 | _and soon..._                              |             |
+|                 | _"multi builder"_                             | _Orchestrate your build workflows easily._                              
+|                 | _"provide state"_                          | _"State management" without any lib._
+|                 | _[\<put-your-suggestion-here\>](https://github.com/angular-buddies/angular-buddies/blob/master/CONTRIBUTING.md#feature)_
+<!-- prettier-ignore-end -->
+
 
 ## Motivation
 
