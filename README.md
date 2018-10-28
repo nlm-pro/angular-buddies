@@ -26,4 +26,4 @@ We would like to thanks all this projects' contributors for their amazing work. 
 
 [contributing]: https://github.com/angular-buddies/angular-buddies/blob/master/CONTRIBUTING.md
 [guidelines]: https://github.com/angular-buddies/angular-buddies/blob/master/docs/GUIDELINES.md
-[prettier-buddy]: https://github.com/angular-buddies/angular-buddies/blob/master/d/packages/prettier/README.md
+[prettier-buddy]: https://github.com/angular-buddies/angular-buddies/blob/master/packages/prettier/README.md

@@ -10,7 +10,6 @@ In order to get along nicely, we would like you to follow the following guidelin
 * [Submission Guidelines](#submit)
 * [Coding Rules](#rules)
 * [Commit Message Guidelines](#commit)
-* [Signing the CLA](#cla)
 
 ## <a name="coc"></a> Code of Conduct
 
