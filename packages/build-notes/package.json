@@ -1,6 +1,9 @@
 {
-  "name": "build-notes",
-  "version": "1.0.0-alpha.0",
+  "name": "@angular-buddies/build-notes",
+  "version": "1.0.0-alpha.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "description":
     "Your buddy who notes for you all the informations you may need about your project.",
   "keywords": ["angular", "architect", "builder", "webpack", "report"],
@@ -29,7 +32,7 @@
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "typescript": "~3.1.1",
-    "@angular-devkit/architect-cli": "^0.10.3"
+    "@angular-devkit/architect-cli": "^0.10.3",
+    "typescript": "~3.1.1"
   }
 }
