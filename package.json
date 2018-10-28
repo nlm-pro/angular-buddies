@@ -9,7 +9,6 @@
     "commit": "commit",
     "preversion": "lerna run test",
     "prettify": "prettier --write ./**/*.{json,css,scss,md,js,ts}",
-    "precommit": "lint-staged",
     "clean": "git clean -f",
     "postinstall": "lerna bootstrap",
     "bump": "lerna version premajor --conventional-commits --no-push"
@@ -25,7 +24,7 @@
     "@schematics/angular": "^7.0.3",
     "@types/jasmine": "^2.6.0",
     "@types/node": "^10.12.0",
-    "husky": "^0.14.3",
+    "husky": "^1.1.2",
     "jasmine": "^3.2.0",
     "lerna": "^3.4.3",
     "lint-staged": "^7.1.2",
@@ -35,7 +34,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "npm test"
     }
   }
