@@ -9,6 +9,7 @@
 
 ```
 - [ ] @angular-buddies/prettier
+- [ ] @angular-buddies/build-notes
 ```
 
 ### Versions
