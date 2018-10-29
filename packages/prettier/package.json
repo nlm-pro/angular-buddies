@@ -7,7 +7,6 @@
   "homepage": "https://github.com/noelmace/prettier-schematics#readme",
   "license": "MIT",
   "schematics": "./src/collection.json",
-  "files": ["lib"],
   "publishConfig": {
     "access": "public"
   },
