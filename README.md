@@ -1,6 +1,6 @@
 # :a:ngular Buddies
 
-Enhance your JavaScript Dev Experience with friendly tools made by the Angular Community.
+Enhance your JS Dev Experience with friendly tools made by the Angular Community.
 
 ![Buddies chest bumping](https://user-images.githubusercontent.com/7578400/47610724-bf87e200-da5c-11e8-8c24-91ece38a28df.gif)
 
@@ -20,10 +20,14 @@ Enhance your JavaScript Dev Experience with friendly tools made by the Angular C
 |                 | _[\<put-your-suggestion-here\>](https://github.com/angular-buddies/angular-buddies/blob/master/CONTRIBUTING.md#feature)_
 <!-- prettier-ignore-end -->
 
-
 ## Motivation
 
-We want to offer as much help as possible in order to ease JS / Angular development, enhance Developer Experience and permit you to easily write quality code even if you are a beginner or on your own. To do this, we have established [guidelines][guidelines] for our packages that we strive to always meet.
+We want to offer as much help as possible in order to ease JS / Angular development, enhance Developer Experience and permit you to easily write quality code even if you are a beginner or on your own.
+
+To do so, we:
+
+* mainly rely on the excellent [Angular Devkit][angular-devkit], which allows our "buddies" to integrate well into your existing Angular project with Angular CLI, but also to be usable in other contexts (even those without Angular).
+* have established [guidelines][guidelines] for our packages that we strive to always meet.
 
 ## Want to help?
 
@@ -34,9 +38,10 @@ guidelines for [contributing][contributing] and then check out one of our issues
 
 We would like to thanks all this projects' contributors for their amazing work. They all are true Open Source buddies, and whithout them, this project would not exist:
 
-* [Angular CLI / Devkit](https://github.com/angular/angular-cli), development tools and libraries specialized for Angular.
+* [Angular CLI / Devkit][angular-devkit], development tools and libraries specialized for Angular.
 * [Prettier](https://github.com/prettier/prettier), opinionated code formatter.
 
+[angular-devkit]: https://github.com/angular/angular-cli
 [contributing]: https://github.com/angular-buddies/angular-buddies/blob/master/CONTRIBUTING.md
 [guidelines]: https://github.com/angular-buddies/angular-buddies/blob/master/docs/GUIDELINES.md
 [prettier-buddy]: https://github.com/angular-buddies/angular-buddies/blob/master/packages/prettier/README.md
