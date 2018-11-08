@@ -8,7 +8,7 @@ const collectionPath = path.join(__dirname, '../collection.json');
 
 const defaultOptions: ConfigOptions = {
   singleQuote: true,
-  printWidth: 120
+  printWidth: '120'
 };
 
 describe('config', () => {

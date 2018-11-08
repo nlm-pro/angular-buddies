@@ -29,9 +29,9 @@
       "x-prompt": "Use single quotes instead of double quotes?"
     },
     "printWidth": {
-      "type": "number",
+      "type": "string",
       "description": "See https://prettier.io/docs/en/options.html#quotes",
-      "default": 120,
+      "default": "120",
       "x-prompt": "What line length do you want to configure?"
     }
   },
