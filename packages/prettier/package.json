@@ -4,7 +4,7 @@
   "description": "Your buddy who knows how to make your code pretty using Prettier.",
   "keywords": ["schematics", "angular", "javascript", "web", "prettier", "formatter"],
   "author": "Noel M",
-  "homepage": "https://github.com/noelmace/prettier-schematics#readme",
+  "homepage": "https://github.com/nlm-pro/angular-buddies#readme",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "publishConfig": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noelmace/prettier-schematics.git"
+    "url": "git+https://github.com/nlm-pro/angular-buddies.git"
   },
   "scripts": {
     "schematics": "schematics",
@@ -21,7 +21,7 @@
     "prepublish": "npm run build"
   },
   "bugs": {
-    "url": "https://github.com/noelmace/prettier-schematics/issues"
+    "url": "https://github.com/nlm-pro/angular-buddies/issues"
   },
   "dependencies": {
     "@angular-devkit/core": "^7.0.0",
